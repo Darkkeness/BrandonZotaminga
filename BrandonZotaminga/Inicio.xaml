@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BrandonZotaminga.Inicio">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Sistema Hecho por " TextColor="Black"></Label>
+            <Label Text="Brandon Zotaminga" TextColor="Black"></Label>
+            <Label Text="9no 'B' " TextColor="Black"></Label>
+            <Label Text="Uisrael" TextColor="Black"></Label>
+            <Button  Text="Iniciar Sistema" BackgroundColor="Aqua" Clicked="Button_Clicked"></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

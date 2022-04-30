@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BrandonZotaminga.Resumen">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label x:Name="_usuarioCone"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" TextColor="Black" />
+            <Grid VerticalOptions="FillAndExpand"  >
+                <Grid.RowDefinitions   >
+                    <RowDefinition Height="40" />
+                    <RowDefinition Height="40" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions HorizontalOptions="StartAndExpand" >
+                    <ColumnDefinition  />
+                    <ColumnDefinition  />
+                </Grid.ColumnDefinitions>
+                <Label Grid.Column="0" Grid.Row="0" Text="Nombre:" TextColor="Black" />
+                <Label Grid.Column="0" Grid.Row="1" Text="Total a Pagar:" TextColor="Black"/>
+
+
+                <Entry Grid.Column="1" Grid.Row="0" IsReadOnly="True" x:Name="_nombre" TextColor="Black" />
+                <Entry Grid.Column="1" Grid.Row="1"  IsReadOnly="True" x:Name="_total" TextColor="Black"/>
+
+
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

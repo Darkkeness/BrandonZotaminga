@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BrandonZotaminga.Registro">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label x:Name="_usuarioCone"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" TextColor="Black" />
+
+            <Grid VerticalOptions="FillAndExpand"  >
+                <Grid.RowDefinitions   >
+                    <RowDefinition Height="40" />
+                    <RowDefinition Height="40" />
+                    <RowDefinition Height="40"  />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions HorizontalOptions="StartAndExpand" >
+                    <ColumnDefinition  />
+                    <ColumnDefinition  />
+                </Grid.ColumnDefinitions>
+                <Label Grid.Column="0" Margin="2" Grid.Row="0" Text="Nombre:" TextColor="Black" />
+                <Label Grid.Column="0" Grid.Row="1" Text="Monto:" TextColor="Black"/>
+                <Label Grid.Column="0" Grid.Row="2" Text="Pago:" TextColor="Black"/>
+
+              
+                <Entry Grid.Column="1" Grid.Row="0" x:Name="_nombre" Placeholder="Nombre Alumno" TextColor="Black" />
+                <Entry Grid.Column="1" Grid.Row="1" x:Name="_monto" Keyboard="Numeric" Placeholder="Monto" TextColor="Black"/>
+                <Entry Grid.Column="1" Grid.Row="2" x:Name="_pago" Keyboard="Numeric" IsReadOnly="True" Placeholder="Pago Mensual" TextColor="Black"/>
+                
+
+            </Grid>
+
+            <Button Text="Calcular" Clicked="Button_Clicked"></Button>
+            <Button Text="Guardar" Clicked="Button_Clicked_1"></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
